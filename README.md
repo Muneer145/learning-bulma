@@ -48,7 +48,15 @@ just right click anbd select live server to start using it.
 -  in our js file, we select the burger icon and the navbar menu and store in a variable
 - we then use js to toggle the menu when we click the burger icon on mobile
 # breadcrumbs
+- bread crumbs are kind of like a navigation so we can use  a nav tag
+- to use breadcrumbs, we use "breadcrumb" as a class
+- other separator types can be used woth classes "has-arrow-separator","has-dot-separator","has-bullet-separator"
+- it is also compatible with font awesome icons
+
 # Grid columns
+- to use grid in bulma, we create div with class "columns" and then add teh class "column" on its child elements. since it's a 12 based system, we can use that to divide each element according o to the spacing we want(is-5 for example).
+- note that "has-text-centered" also works fro images
+- we can use "is-v-centered" to center elements stored in "columns"
 # Responsive Classes
 # Tabbed content
 # Message boxes
