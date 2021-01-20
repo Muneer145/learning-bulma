@@ -1,13 +1,15 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savefy</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savefy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
+
 <body>
 
-    <!--- fonts 
+  <!--- fonts 
     <h1 class="is-size-1">Welcome to Savefy</h1>
     <h2 class="is-size-2">hello</h2>
     <h4 class="is-size-4 has-text-weight-bold">why are the same</h4>
@@ -47,14 +49,14 @@
   <nav class="navbar has-shadow is-white">
     <!--logo/brand-->
     <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <img src="assets/logo.png" alt="logo" style="max-height:70px" class="py-2 px-2">
-        </a>
-        <a  class="navbar-burger" id="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
+      <a class="navbar-item" href="#">
+        <img src="assets/logo.png" alt="logo" style="max-height:70px" class="py-2 px-2">
+      </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </div>
     <div class="navbar-menu" id="nav-links">
       <div class="navbar-end">
@@ -78,23 +80,60 @@
   <!--Product info-->
   <section class="section">
     <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <h1 class="is-size-1 title">Docker</h1>
-          <h2 class="is-size-2 subtitle">Dark Roast</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci officiis unde neque soluta quibusdam impedit, ad praesentium nihil architecto!</p>
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-6-tablet is-3-desktop">
+          <h1 class="is-size-3-mobile is-size-1-desktop title">Docker</h1>
+          <h2 class=" is-size-3-mobile is-size-2-desktop subtitle">Dark Roast</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci officiis unde neque soluta
+            quibusdam impedit, ad praesentium nihil architecto!</p>
         </div>
-        <div class="column has-text-centered">
+        <div class="column is-5-desktop is-6-tablet  has-text-centered">
           <img src="assets/product.png" alt="coffee" class="px-6">
         </div>
-        <div class="column">
+        <div class="column is-12-tablet is-4-desktop">
           <div class="is-size-4 mb-4">$10.95</div>
           <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, deserunt?</p>
         </div>
-        
+
+      </div>
+    </div>
+  </section>
+  <!--product and delivery information-->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-8 is-variable">
+        <div class="column is-7-tablet">
+          <!--Tabbed content-->
+          <div class="tabs is-boxed">
+            <ul>
+              <li class="is-active"data-target="product-details">
+                <a>Product Details</a>
+              </li>
+              <li data-target="delivery-information">
+                <a>Delivery Information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="px-2" id="tab-content">
+            <div id="product-details">
+              <h3 class="is-size-5 title">Product Details</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum maiores ipsam porro! Debitis odit molestias unde nobis, magnam quaerat dolores voluptate vero quas cumque adipisci natus labore corrupti velit!</p>
+            </div>
+            <div id="product-information" class="is-hidden">
+              <h3 class="is-size-5 title">Product Information</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum maiores ipsam porro! Debitis odit molestias unde nobis, magnam quaerat dolores voluptate vero quas cumque adipisci natus labore corrupti velitas!</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-5-tablet">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non repellat, quo laboriosam commodi ea
+            blanditiis accusantium aspernatur nihil sed nesciunt eligendi perferendis veritatis! Eligendi a nihil neque!
+            Quibusdam, tempora dolor.</p>
+        </div>
       </div>
     </div>
   </section>
   <script src="index.js"></script>
 </body>
+
 </html>

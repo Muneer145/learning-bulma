@@ -58,7 +58,15 @@ just right click anbd select live server to start using it.
 - note that "has-text-centered" also works fro images
 - we can use "is-v-centered" to center elements stored in "columns"
 # Responsive Classes
+- with bulma, we can easily adjust column widths at diferent screen sizes using responsive class suffixes.(-mobile,-tablet,-desktop)
+- for example class="is-size-1" will apply font size 1 to all screen sizes while class="is-size-1-tablet" will only apply it to tablets and sizes up 
+- class="is-size-3-mobile is-size-1-desktop : means it will be size 3 up until it reaches a desktop 
+- these can be used or column width
+- we can use "is-multiline"(in our example on the columns wrapper) which tells bulma that if we dont have enough space in the single row for the column width, the remaining elements should go to the next line
+- to increase the gap between columns, we need to use "is-variable" and "is-no(1-8)"
 # Tabbed content
+- we can created tabbed content with the templates bulma offers, but we will have to use js manually since bulma does not offer js.
+- we ue the "tabs" for it to work
 # Message boxes
 # Buttons
 # cards 
