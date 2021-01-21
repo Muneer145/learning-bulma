@@ -67,8 +67,14 @@ just right click anbd select live server to start using it.
 # Tabbed content
 - we can created tabbed content with the templates bulma offers, but we will have to use js manually since bulma does not offer js.
 - we ue the "tabs" for it to work
+- it has different styles like "is-boxed","is-toggled", "is-medium", "is-large" etc
 # Message boxes
+- as the name implies, we can create a message box in bulma using class "message". 
+- for the message box header and body we use "message-header" and "message-body" respectively
+- you can change the theme of the box e.g using "is-dark", "is-primary"
 # Buttons
+- "button"
+- we use color schems(is-dark,is-primary), size(is-medium), is-rounded, is-loading(which can be used when doing asychronous task)
 # cards 
 # Creating Modals
 # Form fields
