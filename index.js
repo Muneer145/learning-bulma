@@ -10,6 +10,7 @@ burgerIcon.addEventListener('click',()=>{
 
 //selects all elements that have the tabs class anf li
 const tabs=document.querySelectorAll('.tabs li');
+console.log(tabs)
 //selects all divs that under the tab-content id 
 const tabContentBoxes=document.querySelectorAll('#tab-content > div');
 
