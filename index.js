@@ -30,3 +30,17 @@ tabs.forEach((tab)=>{
         })
     }) 
 })
+
+//Modal
+const modal=document.querySelector(".modal");
+const modalBg=document.querySelector(".modal-background");
+const signupBtn=document.querySelector("#signup");
+
+signupBtn.addEventListener("click",()=>{
+    modal.classList.add("is-active");
+})
+
+//because we cant close the modal once its already open, we have to attach an event listener to the modal background that will remove the modal
+modalBg.addEventListener("click", ()=>{
+    modal.classList.remove("is-active")
+})
