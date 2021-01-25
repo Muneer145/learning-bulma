@@ -47,16 +47,21 @@ just right click anbd select live server to start using it.
 - since bulma is css only we have to use js ourselves to make the burger icon work
 -  in our js file, we select the burger icon and the navbar menu and store in a variable
 - we then use js to toggle the menu when we click the burger icon on mobile
+
+
 # breadcrumbs
 - bread crumbs are kind of like a navigation so we can use  a nav tag
 - to use breadcrumbs, we use "breadcrumb" as a class
 - other separator types can be used woth classes "has-arrow-separator","has-dot-separator","has-bullet-separator"
 - it is also compatible with font awesome icons
 
+
 # Grid columns
 - to use grid in bulma, we create div with class "columns" and then add teh class "column" on its child elements. since it's a 12 based system, we can use that to divide each element according o to the spacing we want(is-5 for example).
 - note that "has-text-centered" also works fro images
 - we can use "is-v-centered" to center elements stored in "columns"
+
+
 # Responsive Classes
 - with bulma, we can easily adjust column widths at diferent screen sizes using responsive class suffixes.(-mobile,-tablet,-desktop)
 - for example class="is-size-1" will apply font size 1 to all screen sizes while class="is-size-1-tablet" will only apply it to tablets and sizes up 
@@ -64,18 +69,66 @@ just right click anbd select live server to start using it.
 - these can be used or column width
 - we can use "is-multiline"(in our example on the columns wrapper) which tells bulma that if we dont have enough space in the single row for the column width, the remaining elements should go to the next line
 - to increase the gap between columns, we need to use "is-variable" and "is-no(1-8)"
+
+
 # Tabbed content
 - we can created tabbed content with the templates bulma offers, but we will have to use js manually since bulma does not offer js.
 - we ue the "tabs" for it to work
 - it has different styles like "is-boxed","is-toggled", "is-medium", "is-large" etc
+
+
 # Message boxes
 - as the name implies, we can create a message box in bulma using class "message". 
 - for the message box header and body we use "message-header" and "message-body" respectively
 - you can change the theme of the box e.g using "is-dark", "is-primary"
+
+
 # Buttons
 - "button"
 - we use color schems(is-dark,is-primary), size(is-medium), is-rounded, is-loading(which can be used when doing asychronous task)
+
+
 # cards 
+- An all- around flexible and composable component
+- we use the "card" class for cards
+- for card image, we use card-image
+- card-header: a horizontal bar with a shadow
+- card-header-title: a left-aligned bold text
+- card-header-icon: a placeholder for an icon
+- card-image: a fullwidth container for a responsive image
+- card-content: a multi-purpose container for any other element
+- card-footer: a horizontal list of controls
+- card-footer-item: a repeatable list item
+- You can center the card-header-title by appending the is-centered modifier.
+- two links can be added to footer( you cna just create another p tag)
+- if you want to hide items when on a different view, we use "is-hidden-(view)"
+- is-centered can be use to center cards in a column.
+
+
 # Creating Modals
+-  we use the "modal" class to use modals
+- modal: the main container
+- modal-background: a transparent overlay that can act as a click target to close the modal
+- modal-content: a horizontally and vertically centered container, with a maximum width of 640px, in which you can include any content
+- modal-close: a simple cross located in the top right corner
+- we need to write our own js code to toggel the modal 
+- NB dont store contents inside "modal-background" div
+
 # Form fields
+-  we use "form" tag to start the form
+- The following CSS classes are supported:
+label
+input
+textarea
+select
+checkbox
+radio
+button
+help
+- whenever we have an input where the user has control of how to information into it, we surrond it with a "control" class
+- for checkboxes, we do the checkbox inside the label
+
+
 # Adding a footer 
+- like the others we use footer as the class
+-  we have to use the content class(preferably in a div) inside the footer
