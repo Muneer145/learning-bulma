@@ -132,3 +132,6 @@ help
 # Adding a footer 
 - like the others we use footer as the class
 -  we have to use the content class(preferably in a div) inside the footer
+
+
+Thats all folks
